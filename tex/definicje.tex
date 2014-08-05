@@ -1,0 +1,28 @@
+%\chapter*{Definicje}
+\chapter{Definicje}
+\begin{list}{}{\leftmargin=0em}
+
+%\renewcommand{\labelitemi}{}
+\item $\mathbb{R}$ - zbiór liczb rzeczywistych
+\item $I$ - macierz opisująca obraz wejściowy
+\item $w$ - szerokość obrazu wejściowego, liczba kolumn macierzy $I$
+\item $h$ - wysokość obrazu wejściowego, liczba wierszy macierzy $I$
+\item $I_{x,y}$ - piksel z obrazu wejściowego na pozycji x, y; wyraz macierzy w~kolumnie~$x$ i~wierszu~$y$
+\item $R(x,y)$ - zbiór reprezentujący otoczenie piksela $I_{x,y}$. W przypadku gdy otoczenie ma postać kwadratu jest to macierz kwadratowa
+\item $R_{t,k}(x,y)$ - element macierzy otoczenia piksela $I_{x,y}$ w kolumnie $t$ i wierszu $k$. Dla uproszczenia czasem zapisywane jako $R_{t,k}$
+\item $\vec{v_{R(x,y)}}$ - wektor cech teksturalnych otoczenia $R(x,y)$
+\item $\Psi$ - klasyfikator tekstur
+\item $P$ - zbiór zawierający wyniki klasyfikacji otoczeń pikseli obrazu $I$. Zbiór może być reprezentowany w postaci macierzy, w której każdy element tej macierzy odpowiada wynikowi klasyfikacji otoczenia $R_{x,y}$. Rozmiar macierzy $P$ jest mniejszy niż obrazu wejściowego $I$, gdy krok przesuwania okna (kolejnych obszarów $R$) jest większy niż 1~piksel
+\item $C_{d,\theta}(m,n)$ - macierz współwystępowania (ang. Co-occurrence matrix)
+\item $RLM_{\theta}(i,j)$ - macierz długości ciągów (ang. Run-length matrix)
+
+\item $S$ - zbiór zawierający zalążki segmentacji
+\item $Q$ - zbiór wysegmentowanych obszarów
+\item $\vec{u_{Q_i}}$ - wektor cech kształtu obszaru $Q_i$
+\item $\Gamma$ - odosobniony, ciągły obszar, składający się z jednego segmentu lub wielu segmentów
+\item $\Lambda$ - zbiór odosobnionych, ciągłych obszarów $\Gamma$ zdetektowanych na obrazie
+\item $\vartheta$ - ciągły obszar (może, ale nie musi być odosobniony), może składać się z jednego segmentu lub wielu
+\item $\Phi$ - klasyfikator obiektów (obszarów)
+\item $\Theta$ - zbiór obiektów (obszarów, czyli połączonych segmentów) reprezentujący rozpoznane z~obrazu komórki. W~szczególnym przypadku obszar może składać się z~jednego segmentu.
+
+\end{list}
